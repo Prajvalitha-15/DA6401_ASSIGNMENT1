@@ -1,0 +1,22 @@
+Sweep Name:  LR: 0.001, AC: tanh, BS: 32, Optim: momentum, WI: random, WD: 0.5, No_HL: 4, HS: 32
+Epoch 0: Training Loss = 1.5457 Validation Loss = 1.5358
+Training Accuracy = 0.4356 Validation Accuracy = 0.4412
+Epoch 1: Training Loss = 1.2857 Validation Loss = 1.2772
+Training Accuracy = 0.5395 Validation Accuracy = 0.5482
+Epoch 2: Training Loss = 1.1196 Validation Loss = 1.1158
+Training Accuracy = 0.5850 Validation Accuracy = 0.5878
+Epoch 3: Training Loss = 1.0139 Validation Loss = 1.0131
+Training Accuracy = 0.6282 Validation Accuracy = 0.6297
+Epoch 4: Training Loss = 0.9442 Validation Loss = 0.9435
+Training Accuracy = 0.6492 Validation Accuracy = 0.6550
+Epoch 5: Training Loss = 0.8955 Validation Loss = 0.8944
+Training Accuracy = 0.6682 Validation Accuracy = 0.6775
+Epoch 6: Training Loss = 0.8580 Validation Loss = 0.8569
+Training Accuracy = 0.6803 Validation Accuracy = 0.6912
+Epoch 7: Training Loss = 0.8296 Validation Loss = 0.8283
+Training Accuracy = 0.6865 Validation Accuracy = 0.6970
+Epoch 8: Training Loss = 0.8052 Validation Loss = 0.8044
+Training Accuracy = 0.6968 Validation Accuracy = 0.7090
+Epoch 9: Training Loss = 0.7845 Validation Loss = 0.7827
+Training Accuracy = 0.7020 Validation Accuracy = 0.7147
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.

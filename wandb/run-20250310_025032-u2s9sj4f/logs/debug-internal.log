@@ -1,0 +1,16 @@
+{"time":"2025-03-10T02:50:32.3220041+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250310_025032-u2s9sj4f\\logs\\debug-core.log"}
+{"time":"2025-03-10T02:50:33.5589943+05:30","level":"INFO","msg":"created new stream","id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:33.5595389+05:30","level":"INFO","msg":"stream: started","id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:33.5596101+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:33.5596101+05:30","level":"INFO","msg":"sender: started","stream_id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:33.5596101+05:30","level":"INFO","msg":"handler: started","stream_id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:33.9454913+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T02:50:40.4722967+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T02:50:40.4728008+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T02:50:41.476282+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6915621,"progress":"662B/662B"},{"desc":"uploading config.yaml","runtime_seconds":0.4066791,"progress":"1012B/1012B"}],"total_operations":2}}
+{"time":"2025-03-10T02:50:42.0814752+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T02:50:42.5720014+05:30","level":"INFO","msg":"stream: closing","id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:42.5720014+05:30","level":"INFO","msg":"handler: closed","stream_id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:42.5720014+05:30","level":"INFO","msg":"sender: closed","stream_id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:42.5720014+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"u2s9sj4f"}
+{"time":"2025-03-10T02:50:42.5720014+05:30","level":"INFO","msg":"stream: closed","id":"u2s9sj4f"}

@@ -4,3 +4,13 @@
 2025-03-10 00:57:51,561 INFO    Thread-206 (_run_job):1320 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'sigmoid', 'batchSize': 16, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 5, 'num_hiddenLayers': 4, 'optimizer': 'momentum', 'weightDecay': 0.5, 'weightInit': 'xavier'}
 config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
 2025-03-10 00:57:51,562 INFO    Thread-206 (_run_job):1320 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-10 00:58:09,816 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/y6vh5n4l
+2025-03-10 00:58:09,818 ERROR   Thread-206 (_run_job):1320 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-10 00:58:09,818 INFO    Thread-206 (_run_job):1320 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-10 00:58:09,819 INFO    Thread-206 (_run_job):1320 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-10 00:58:09,820 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-10 00:58:09,821 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_restore():2322] restore
+2025-03-10 00:58:09,822 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_restore():2328] restore done
+2025-03-10 00:58:11,105 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-10 00:58:11,105 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-10 00:58:11,108 INFO    Thread-206 (_run_job):1320 [wandb_run.py:_footer_sync_info():3917] logging synced files

@@ -1,0 +1,16 @@
+{"time":"2025-03-10T02:49:44.6286576+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250310_024944-sod7ngnt\\logs\\debug-core.log"}
+{"time":"2025-03-10T02:49:45.8477773+05:30","level":"INFO","msg":"created new stream","id":"sod7ngnt"}
+{"time":"2025-03-10T02:49:45.8477773+05:30","level":"INFO","msg":"stream: started","id":"sod7ngnt"}
+{"time":"2025-03-10T02:49:45.8477773+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sod7ngnt"}
+{"time":"2025-03-10T02:49:45.8477773+05:30","level":"INFO","msg":"handler: started","stream_id":"sod7ngnt"}
+{"time":"2025-03-10T02:49:45.8477773+05:30","level":"INFO","msg":"sender: started","stream_id":"sod7ngnt"}
+{"time":"2025-03-10T02:49:46.2025152+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T02:50:11.9605386+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T02:50:11.9618494+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T02:50:13.0604797+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.7857008,"progress":"658B/658B"},{"desc":"uploading config.yaml","runtime_seconds":0.4615308,"progress":"1008B/1008B"}],"total_operations":2}}
+{"time":"2025-03-10T02:50:13.8815331+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T02:50:14.2224963+05:30","level":"INFO","msg":"stream: closing","id":"sod7ngnt"}
+{"time":"2025-03-10T02:50:14.2224963+05:30","level":"INFO","msg":"handler: closed","stream_id":"sod7ngnt"}
+{"time":"2025-03-10T02:50:14.2224963+05:30","level":"INFO","msg":"sender: closed","stream_id":"sod7ngnt"}
+{"time":"2025-03-10T02:50:14.2224963+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"sod7ngnt"}
+{"time":"2025-03-10T02:50:14.2224963+05:30","level":"INFO","msg":"stream: closed","id":"sod7ngnt"}

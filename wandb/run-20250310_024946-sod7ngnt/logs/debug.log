@@ -1,0 +1,6 @@
+2025-03-10 02:49:46,420 INFO    Thread-111 (_run_job):12428 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250310_024946-sod7ngnt\logs\debug.log
+2025-03-10 02:49:46,421 INFO    Thread-111 (_run_job):12428 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250310_024946-sod7ngnt\logs\debug-internal.log
+2025-03-10 02:49:46,421 INFO    Thread-111 (_run_job):12428 [wandb_init.py:init():761] calling init triggers
+2025-03-10 02:49:46,422 INFO    Thread-111 (_run_job):12428 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'relu', 'batchSize': 16, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 5, 'num_hiddenLayers': 3, 'optimizer': 'nadam', 'weightDecay': 0, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-10 02:49:46,423 INFO    Thread-111 (_run_job):12428 [wandb_init.py:init():776] wandb.init() called while a run is active
