@@ -1,0 +1,10 @@
+{"time":"2025-03-09T17:14:22.4198298+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250309_171422-rfm18bz1\\logs\\debug-core.log"}
+{"time":"2025-03-09T17:14:23.859091+05:30","level":"INFO","msg":"created new stream","id":"rfm18bz1"}
+{"time":"2025-03-09T17:14:23.859091+05:30","level":"INFO","msg":"handler: started","stream_id":"rfm18bz1"}
+{"time":"2025-03-09T17:14:23.8596299+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"rfm18bz1"}
+{"time":"2025-03-09T17:14:23.8598881+05:30","level":"INFO","msg":"sender: started","stream_id":"rfm18bz1"}
+{"time":"2025-03-09T17:14:23.8598881+05:30","level":"INFO","msg":"stream: started","id":"rfm18bz1"}
+{"time":"2025-03-09T17:14:24.6137466+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T18:01:43.5638589+05:30","level":"WARN","msg":"sender: taking a long time","seconds":2591.9234365,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"cygykm9j9jbz\"  connection_id:\"127.0.0.1:53054\")"}
+{"time":"2025-03-09T18:01:43.6838016+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-03-09T18:01:46.3053185+05:30","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":2594.7074281,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"cygykm9j9jbz\"  connection_id:\"127.0.0.1:53054\")"}

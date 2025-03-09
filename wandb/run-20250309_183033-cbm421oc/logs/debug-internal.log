@@ -1,0 +1,22 @@
+{"time":"2025-03-09T18:30:33.1619417+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250309_183033-cbm421oc\\logs\\debug-core.log"}
+{"time":"2025-03-09T18:30:34.4926184+05:30","level":"INFO","msg":"created new stream","id":"cbm421oc"}
+{"time":"2025-03-09T18:30:34.4926184+05:30","level":"INFO","msg":"stream: started","id":"cbm421oc"}
+{"time":"2025-03-09T18:30:34.4926184+05:30","level":"INFO","msg":"handler: started","stream_id":"cbm421oc"}
+{"time":"2025-03-09T18:30:34.4931395+05:30","level":"INFO","msg":"sender: started","stream_id":"cbm421oc"}
+{"time":"2025-03-09T18:30:34.4931395+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cbm421oc"}
+{"time":"2025-03-09T18:30:34.9179767+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T18:30:35.2460166+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T18:30:46.6168545+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T18:30:46.6214133+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T18:33:36.2847703+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T18:33:36.9711057+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T18:35:00.6572602+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T18:35:30.8068642+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T18:35:30.8081474+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T18:35:31.8286136+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.1743246,"progress":"251B/251B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.1738082,"progress":"129B/129B"}],"total_operations":2}}
+{"time":"2025-03-09T18:35:32.3530556+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T18:35:32.7524893+05:30","level":"INFO","msg":"stream: closing","id":"cbm421oc"}
+{"time":"2025-03-09T18:35:32.7524893+05:30","level":"INFO","msg":"handler: closed","stream_id":"cbm421oc"}
+{"time":"2025-03-09T18:35:32.7524893+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cbm421oc"}
+{"time":"2025-03-09T18:35:32.7524893+05:30","level":"INFO","msg":"sender: closed","stream_id":"cbm421oc"}
+{"time":"2025-03-09T18:35:32.7531709+05:30","level":"INFO","msg":"stream: closed","id":"cbm421oc"}

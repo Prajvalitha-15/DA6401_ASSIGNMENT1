@@ -16,3 +16,67 @@ config: {'_wandb': {}}
 2025-03-09 15:48:27,763 INFO    MainThread:7816 [wandb_run.py:_label_probe_notebook():1204] probe notebook
 2025-03-09 15:48:27,781 INFO    MainThread:7816 [wandb_init.py:init():891] updated telemetry
 2025-03-09 15:48:27,848 INFO    MainThread:7816 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 15:48:30,023 ERROR   MainThread:7816 [wandb_init.py:init():1478] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 1468, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 963, in init
+    raise error
+wandb.errors.errors.CommError: failed to upsert bucket: returned error 400: {"data":{"upsertBucket":null},"errors":[{"message":"you may not log runs directly to your organization, please try using your team entity","path":["upsertBucket"]}]}
+2025-03-09 15:49:24,166 INFO    MainThread:7816 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_154924-9s41ckaj\logs\debug.log
+2025-03-09 15:49:24,166 INFO    MainThread:7816 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_154924-9s41ckaj\logs\debug-internal.log
+2025-03-09 15:49:24,166 INFO    MainThread:7816 [wandb_init.py:init():761] calling init triggers
+2025-03-09 15:49:24,166 INFO    MainThread:7816 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-09 15:49:24,166 INFO    MainThread:7816 [wandb_init.py:init():784] starting backend
+2025-03-09 15:49:24,166 INFO    MainThread:7816 [wandb_init.py:init():788] sending inform_init request
+2025-03-09 15:49:24,169 INFO    MainThread:7816 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-09 15:49:24,170 INFO    MainThread:7816 [wandb_init.py:init():798] backend started and connected
+2025-03-09 15:49:24,172 INFO    MainThread:7816 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-09 15:49:24,191 INFO    MainThread:7816 [wandb_init.py:init():891] updated telemetry
+2025-03-09 15:49:24,265 INFO    MainThread:7816 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 15:49:26,148 INFO    MainThread:7816 [wandb_init.py:init():990] starting run threads in backend
+2025-03-09 15:49:26,953 INFO    MainThread:7816 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-09 15:49:26,954 INFO    MainThread:7816 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-09 15:49:26,954 INFO    MainThread:7816 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-09 15:49:26,954 INFO    MainThread:7816 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-09 15:49:26,956 INFO    MainThread:7816 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-09 15:52:28,919 INFO    MainThread:7816 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/9s41ckaj
+2025-03-09 15:52:28,930 INFO    MainThread:7816 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-09 15:52:28,931 INFO    MainThread:7816 [wandb_run.py:_restore():2322] restore
+2025-03-09 15:52:28,931 INFO    MainThread:7816 [wandb_run.py:_restore():2328] restore done
+2025-03-09 15:52:31,084 INFO    MainThread:7816 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 15:52:31,084 INFO    MainThread:7816 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 15:52:31,084 INFO    MainThread:7816 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 17:14:22,391 INFO    MainThread:7816 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_171422-rfm18bz1\logs\debug.log
+2025-03-09 17:14:22,391 INFO    MainThread:7816 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_171422-rfm18bz1\logs\debug-internal.log
+2025-03-09 17:14:22,391 INFO    MainThread:7816 [wandb_init.py:init():761] calling init triggers
+2025-03-09 17:14:22,391 INFO    MainThread:7816 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-09 17:14:22,391 INFO    MainThread:7816 [wandb_init.py:init():784] starting backend
+2025-03-09 17:14:22,391 INFO    MainThread:7816 [wandb_init.py:init():788] sending inform_init request
+2025-03-09 17:14:22,407 INFO    MainThread:7816 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-09 17:14:22,412 INFO    MainThread:7816 [wandb_init.py:init():798] backend started and connected
+2025-03-09 17:14:22,430 INFO    MainThread:7816 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-09 17:14:22,477 INFO    MainThread:7816 [wandb_run.py:_label_probe_notebook():1214] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 3374: character maps to <undefined>
+2025-03-09 17:14:22,477 INFO    MainThread:7816 [wandb_init.py:init():891] updated telemetry
+2025-03-09 17:14:22,553 INFO    MainThread:7816 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 17:14:24,607 INFO    MainThread:7816 [wandb_init.py:init():990] starting run threads in backend
+2025-03-09 17:14:25,183 INFO    MainThread:7816 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-09 17:14:25,185 INFO    MainThread:7816 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-09 17:14:25,185 INFO    MainThread:7816 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-09 17:14:25,186 INFO    MainThread:7816 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-09 17:14:25,187 INFO    MainThread:7816 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-09 17:14:31,035 INFO    MainThread:7816 [wandb_config.py:__setitem__():154] config set learning_rate = 0.01 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000287DA365D30>>
+2025-03-09 17:14:31,035 INFO    MainThread:7816 [wandb_run.py:_config_callback():1261] config_cb learning_rate 0.01 None
+2025-03-09 17:14:31,037 INFO    MainThread:7816 [wandb_config.py:__setitem__():154] config set epochs = 10 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000287DA365D30>>
+2025-03-09 17:14:31,038 INFO    MainThread:7816 [wandb_run.py:_config_callback():1261] config_cb epochs 10 None
+2025-03-09 17:14:31,038 INFO    MainThread:7816 [wandb_config.py:__setitem__():154] config set batch_size = 64 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000287DA365D30>>
+2025-03-09 17:14:31,038 INFO    MainThread:7816 [wandb_run.py:_config_callback():1261] config_cb batch_size 64 None
+2025-03-09 17:14:31,040 INFO    MainThread:7816 [wandb_config.py:__setitem__():154] config set hidden_layers = [128, 64] - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000287DA365D30>>
+2025-03-09 17:14:31,040 INFO    MainThread:7816 [wandb_run.py:_config_callback():1261] config_cb hidden_layers [128, 64] None
+2025-03-09 17:14:31,042 INFO    MainThread:7816 [wandb_config.py:__setitem__():154] config set input_size = 784 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000287DA365D30>>
+2025-03-09 17:14:31,043 INFO    MainThread:7816 [wandb_run.py:_config_callback():1261] config_cb input_size 784 None
+2025-03-09 17:14:31,043 INFO    MainThread:7816 [wandb_config.py:__setitem__():154] config set output_size = 10 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000287DA365D30>>
+2025-03-09 17:14:31,043 INFO    MainThread:7816 [wandb_run.py:_config_callback():1261] config_cb output_size 10 None
