@@ -1,0 +1,16 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "CPython 3.12.9",
+  "startedAt":  "2025-03-09T16:47:11.236131Z",
+  "program":  "c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\q4.ipynb",
+  "codePath":  "q4.ipynb",
+  "git":  {
+    "remote":  "https://github.com/Prajvalitha-15/DA6401_ASSIGNMENT1.git",
+    "commit":  "57731d97d81a67a40568b093c14e0f7c57709ce3"
+  },
+  "email":  "ed20b071@smail.iitm.ac.in",
+  "root":  "c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1",
+  "host":  "Gojo",
+  "executable":  "c:\\Python312\\python.exe",
+  "codePathLocal":  "q4.ipynb"
+}

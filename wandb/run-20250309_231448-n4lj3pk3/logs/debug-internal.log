@@ -1,0 +1,18 @@
+{"time":"2025-03-09T23:14:48.4745207+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250309_231448-n4lj3pk3\\logs\\debug-core.log"}
+{"time":"2025-03-09T23:14:49.7351529+05:30","level":"INFO","msg":"created new stream","id":"n4lj3pk3"}
+{"time":"2025-03-09T23:14:49.7351529+05:30","level":"INFO","msg":"stream: started","id":"n4lj3pk3"}
+{"time":"2025-03-09T23:14:49.7351529+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"n4lj3pk3"}
+{"time":"2025-03-09T23:14:49.7351529+05:30","level":"INFO","msg":"handler: started","stream_id":"n4lj3pk3"}
+{"time":"2025-03-09T23:14:49.7351529+05:30","level":"INFO","msg":"sender: started","stream_id":"n4lj3pk3"}
+{"time":"2025-03-09T23:14:50.2579464+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T23:16:28.1458227+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": write tcp 10.42.185.136:59848->35.186.228.49:443: wsasend: An established connection was aborted by the software in your host machine."}
+{"time":"2025-03-09T23:16:28.1695653+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da6401-assignments/assignment1/n4lj3pk3/file_stream\": dial tcp 35.186.228.49:443: connectex: A socket operation was attempted to an unreachable host."}
+{"time":"2025-03-09T23:16:31.48127+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T23:16:31.4834667+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T23:16:32.4889161+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.2337763,"progress":"1.2KB/1.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.2337763,"progress":"229B/229B"}],"total_operations":2}}
+{"time":"2025-03-09T23:16:32.943989+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T23:16:33.2958621+05:30","level":"INFO","msg":"stream: closing","id":"n4lj3pk3"}
+{"time":"2025-03-09T23:16:33.2958621+05:30","level":"INFO","msg":"sender: closed","stream_id":"n4lj3pk3"}
+{"time":"2025-03-09T23:16:33.2958621+05:30","level":"INFO","msg":"handler: closed","stream_id":"n4lj3pk3"}
+{"time":"2025-03-09T23:16:33.2958621+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"n4lj3pk3"}
+{"time":"2025-03-09T23:16:33.2963895+05:30","level":"INFO","msg":"stream: closed","id":"n4lj3pk3"}

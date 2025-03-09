@@ -1,0 +1,84 @@
+2025-03-09 22:41:14,619 INFO    Thread-16 (_run_job):3992 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_224114-k3qyl10b\logs\debug.log
+2025-03-09 22:41:14,619 INFO    Thread-16 (_run_job):3992 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_224114-k3qyl10b\logs\debug-internal.log
+2025-03-09 22:41:14,619 INFO    Thread-16 (_run_job):3992 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:41:14,619 INFO    Thread-16 (_run_job):3992 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'relu', 'batchSize': 164, 'hiddenLayer_Size': 32, 'learningRate': 0.001, 'num_epochs': 20, 'num_hiddenLayers': 3, 'optimizer': 'sgd', 'weightDecay': 0.5, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 22:41:14,623 INFO    Thread-16 (_run_job):3992 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 22:41:14,759 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/k3qyl10b
+2025-03-09 22:41:14,761 ERROR   Thread-16 (_run_job):3992 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 22:41:14,761 INFO    Thread-16 (_run_job):3992 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 22:41:14,761 INFO    Thread-16 (_run_job):3992 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 22:41:14,761 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 22:41:14,761 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_restore():2322] restore
+2025-03-09 22:41:14,761 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_restore():2328] restore done
+2025-03-09 22:41:16,638 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 22:41:16,638 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 22:41:16,638 INFO    Thread-16 (_run_job):3992 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 22:41:16,643 ERROR   MainThread:3992 [pyagent.py:_run_jobs_from_queue():234] Run k3qyl10b errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_3992\1058529509.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, x_val, y_val, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_3992\2451862988.py", line 61, in train
+    self.backpropagation(x_batch, y_batch, learning_rate, optimizer)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_3992\2451862988.py", line 143, in backpropagation
+    self.weights[i] -= learning_rate * dw
+ValueError: operands could not be broadcast together with shapes (32,784) (784,32) (32,784) 
+
+2025-03-09 22:41:26,712 INFO    MsgRouterThr:3992 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_setup.py:_flush():67] Configure stats pid to 3992
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_setup.py:_flush():67] Loading settings from c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_224127-v7t2hujs\logs\debug.log
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_224127-v7t2hujs\logs\debug-internal.log
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000020F5D085E50>
+2025-03-09 22:41:27,606 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:41:27,614 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'sigmoid', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.001, 'num_epochs': 20, 'num_hiddenLayers': 4, 'optimizer': 'adam', 'weightDecay': 0.5, 'weightInit': 'xavier'}
+config: {'_wandb': {}}
+2025-03-09 22:41:27,614 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():784] starting backend
+2025-03-09 22:41:27,614 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():788] sending inform_init request
+2025-03-09 22:41:27,614 INFO    Thread-21 (_run_job):3992 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-09 22:41:27,617 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():798] backend started and connected
+2025-03-09 22:41:27,618 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunc': 'sigmoid', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.001, 'num_epochs': 20, 'num_hiddenLayers': 4, 'optimizer': 'adam', 'weightDecay': 0.5, 'weightInit': 'xavier'}
+2025-03-09 22:41:27,619 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-09 22:41:27,638 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():891] updated telemetry
+2025-03-09 22:41:27,692 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 22:41:29,490 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():990] starting run threads in backend
+2025-03-09 22:41:29,788 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-09 22:41:29,788 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-09 22:41:29,788 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-09 22:41:29,789 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-09 22:41:29,790 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-09 22:41:29,792 INFO    Thread-21 (_run_job):3992 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_224129-v7t2hujs\logs\debug.log
+2025-03-09 22:41:29,792 INFO    Thread-21 (_run_job):3992 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_224129-v7t2hujs\logs\debug-internal.log
+2025-03-09 22:41:29,792 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:41:29,801 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'sigmoid', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.001, 'num_epochs': 20, 'num_hiddenLayers': 4, 'optimizer': 'adam', 'weightDecay': 0.5, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 22:41:29,801 INFO    Thread-21 (_run_job):3992 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 22:41:29,947 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/v7t2hujs
+2025-03-09 22:41:29,951 ERROR   Thread-21 (_run_job):3992 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 22:41:29,951 INFO    Thread-21 (_run_job):3992 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 22:41:29,952 INFO    Thread-21 (_run_job):3992 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 22:41:29,952 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 22:41:29,952 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_restore():2322] restore
+2025-03-09 22:41:29,952 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_restore():2328] restore done
+2025-03-09 22:41:31,954 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 22:41:31,954 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 22:41:31,956 INFO    Thread-21 (_run_job):3992 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 22:41:31,971 ERROR   MainThread:3992 [pyagent.py:_run_jobs_from_queue():234] Run v7t2hujs errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_3992\1058529509.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, x_val, y_val, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_3992\2451862988.py", line 61, in train
+    self.backpropagation(x_batch, y_batch, learning_rate, optimizer)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_3992\2451862988.py", line 167, in backpropagation
+    self.velocities_w[i] = beta1 * self.velocities_w[i] + (1 - beta1) * dw
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+ValueError: operands could not be broadcast together with shapes (64,784) (784,64) 
+
+2025-03-09 22:41:31,976 ERROR   MainThread:3992 [pyagent.py:_run_jobs_from_queue():245] Detected 3 failed runs in the first 60 seconds, killing sweep.

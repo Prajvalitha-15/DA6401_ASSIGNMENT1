@@ -1,0 +1,27 @@
+2025-03-09 21:56:39,718 INFO    Thread-16 (_run_job):5292 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_215639-huon6o6o\logs\debug.log
+2025-03-09 21:56:39,718 INFO    Thread-16 (_run_job):5292 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_215639-huon6o6o\logs\debug-internal.log
+2025-03-09 21:56:39,718 INFO    Thread-16 (_run_job):5292 [wandb_init.py:init():761] calling init triggers
+2025-03-09 21:56:39,718 INFO    Thread-16 (_run_job):5292 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'sigmoid', 'batchSize': 32, 'hiddenLayer_Size': 128, 'learningRate': 0.0001, 'num_epochs': 20, 'num_hiddenLayers': 3, 'optimizer': 'momentum', 'weightDecay': 0, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 21:56:39,718 INFO    Thread-16 (_run_job):5292 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 21:56:39,725 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/huon6o6o
+2025-03-09 21:56:39,730 ERROR   Thread-16 (_run_job):5292 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 21:56:39,730 INFO    Thread-16 (_run_job):5292 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 21:56:39,730 INFO    Thread-16 (_run_job):5292 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 21:56:39,730 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 21:56:39,730 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_restore():2322] restore
+2025-03-09 21:56:39,730 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_restore():2328] restore done
+2025-03-09 21:56:41,804 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 21:56:41,804 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 21:56:41,804 INFO    Thread-16 (_run_job):5292 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 21:56:41,818 ERROR   MainThread:5292 [pyagent.py:_run_jobs_from_queue():234] Run huon6o6o errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_5292\2741880302.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_5292\3812825710.py", line 52, in train
+    for epoch in range(epochs):
+                 ^^^^^^^^^^^^^
+TypeError: 'str' object cannot be interpreted as an integer
+

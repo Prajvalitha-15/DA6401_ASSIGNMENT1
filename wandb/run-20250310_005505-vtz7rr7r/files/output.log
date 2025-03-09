@@ -1,0 +1,21 @@
+Sweep Name:  LR: 0.0001, AC: relu, BS: 16, Optim: nesterov, WI: xavier, WD: 0, No_HL: 4, HS: 64
+Epoch 0: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 1: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 2: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 3: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 4: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 5: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 6: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 7: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 8: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022
+Epoch 9: Training Loss = 7.5251 Validation Loss = 7.4515
+Training Accuracy = 0.1007 Validation Accuracy = 0.1022

@@ -1,0 +1,90 @@
+2025-03-09 23:18:09,074 INFO    Thread-171 (_run_job):11688 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_231809-z8jlah1q\logs\debug.log
+2025-03-09 23:18:09,074 INFO    Thread-171 (_run_job):11688 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_231809-z8jlah1q\logs\debug-internal.log
+2025-03-09 23:18:09,074 INFO    Thread-171 (_run_job):11688 [wandb_init.py:init():761] calling init triggers
+2025-03-09 23:18:09,074 INFO    Thread-171 (_run_job):11688 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'relu', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.001, 'num_epochs': 10, 'num_hiddenLayers': 4, 'optimizer': 'sgd', 'weightDecay': 0.5, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 23:18:09,074 INFO    Thread-171 (_run_job):11688 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 23:18:31,827 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/z8jlah1q
+2025-03-09 23:18:31,830 ERROR   Thread-171 (_run_job):11688 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 23:18:31,837 INFO    Thread-171 (_run_job):11688 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 23:18:31,853 INFO    Thread-171 (_run_job):11688 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 23:18:31,860 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-09 23:18:31,869 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_restore():2322] restore
+2025-03-09 23:18:31,885 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_restore():2328] restore done
+2025-03-09 23:34:12,577 INFO    Thread-10 (_heartbeat):11688 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "c:\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "c:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "c:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "c:\Python312\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002605BFA5010>, 'Connection to api.wandb.ai timed out. (connect timeout=60)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002605BFA5010>, 'Connection to api.wandb.ai timed out. (connect timeout=60)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\sdk\lib\retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 398, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002605BFA5010>, 'Connection to api.wandb.ai timed out. (connect timeout=60)'))
+2025-03-09 23:42:17,021 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 23:42:17,028 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 23:42:17,033 INFO    Thread-171 (_run_job):11688 [wandb_run.py:_footer_sync_info():3917] logging synced files

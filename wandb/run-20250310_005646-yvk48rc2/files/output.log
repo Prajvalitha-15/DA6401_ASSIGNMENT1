@@ -1,0 +1,21 @@
+Sweep Name:  LR: 0.001, AC: tanh, BS: 16, Optim: rmsprop, WI: random, WD: 0.0005, No_HL: 5, HS: 64
+Epoch 0: Training Loss = 0.4940 Validation Loss = 0.5103
+Training Accuracy = 0.8182 Validation Accuracy = 0.8155
+Epoch 1: Training Loss = 0.4421 Validation Loss = 0.4704
+Training Accuracy = 0.8376 Validation Accuracy = 0.8342
+Epoch 2: Training Loss = 0.4190 Validation Loss = 0.4570
+Training Accuracy = 0.8474 Validation Accuracy = 0.8362
+Epoch 3: Training Loss = 0.3786 Validation Loss = 0.4265
+Training Accuracy = 0.8606 Validation Accuracy = 0.8442
+Epoch 4: Training Loss = 0.3608 Validation Loss = 0.4140
+Training Accuracy = 0.8669 Validation Accuracy = 0.8470
+Epoch 5: Training Loss = 0.3384 Validation Loss = 0.3952
+Training Accuracy = 0.8758 Validation Accuracy = 0.8533
+Epoch 6: Training Loss = 0.3417 Validation Loss = 0.4124
+Training Accuracy = 0.8724 Validation Accuracy = 0.8563
+Epoch 7: Training Loss = 0.3150 Validation Loss = 0.3881
+Training Accuracy = 0.8848 Validation Accuracy = 0.8605
+Epoch 8: Training Loss = 0.3164 Validation Loss = 0.3905
+Training Accuracy = 0.8809 Validation Accuracy = 0.8617
+Epoch 9: Training Loss = 0.2940 Validation Loss = 0.3887
+Training Accuracy = 0.8914 Validation Accuracy = 0.8615

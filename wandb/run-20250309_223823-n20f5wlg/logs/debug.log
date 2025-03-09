@@ -1,0 +1,140 @@
+2025-03-09 22:38:23,718 INFO    Thread-11 (_run_job):10288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223823-n20f5wlg\logs\debug.log
+2025-03-09 22:38:23,718 INFO    Thread-11 (_run_job):10288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223823-n20f5wlg\logs\debug-internal.log
+2025-03-09 22:38:23,718 INFO    Thread-11 (_run_job):10288 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:38:23,718 INFO    Thread-11 (_run_job):10288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'tanh', 'batchSize': 132, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 10, 'num_hiddenLayers': 3, 'optimizer': 'nadam', 'weightDecay': 0.0005, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 22:38:23,718 INFO    Thread-11 (_run_job):10288 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 22:38:23,870 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/n20f5wlg
+2025-03-09 22:38:23,871 ERROR   Thread-11 (_run_job):10288 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 22:38:23,871 INFO    Thread-11 (_run_job):10288 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 22:38:23,871 INFO    Thread-11 (_run_job):10288 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 22:38:23,871 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 22:38:23,871 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_restore():2322] restore
+2025-03-09 22:38:23,871 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_restore():2328] restore done
+2025-03-09 22:38:25,791 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 22:38:25,791 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 22:38:25,792 INFO    Thread-11 (_run_job):10288 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 22:38:25,807 ERROR   MainThread:10288 [pyagent.py:_run_jobs_from_queue():234] Run n20f5wlg errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\1058529509.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, x_val, y_val, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\70919448.py", line 61, in train
+    self.backpropagation(x_batch, y_batch, learning_rate, optimizer)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\70919448.py", line 139, in backpropagation
+    dw = deltas[i].T.dot(self.layers[i]) / m
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shapes (132,64) and (784,132) not aligned: 64 (dim 1) != 784 (dim 0)
+
+2025-03-09 22:38:30,818 INFO    MsgRouterThr:10288 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_setup.py:_flush():67] Configure stats pid to 10288
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_setup.py:_flush():67] Loading settings from c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223831-8ea93ktp\logs\debug.log
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223831-8ea93ktp\logs\debug-internal.log
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000016138186060>
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'relu', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 20, 'num_hiddenLayers': 5, 'optimizer': 'adam', 'weightDecay': 0, 'weightInit': 'random'}
+config: {'_wandb': {}}
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():784] starting backend
+2025-03-09 22:38:31,826 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():788] sending inform_init request
+2025-03-09 22:38:31,842 INFO    Thread-16 (_run_job):10288 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-09 22:38:31,844 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():798] backend started and connected
+2025-03-09 22:38:31,846 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunc': 'relu', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 20, 'num_hiddenLayers': 5, 'optimizer': 'adam', 'weightDecay': 0, 'weightInit': 'random'}
+2025-03-09 22:38:31,849 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-09 22:38:31,866 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():891] updated telemetry
+2025-03-09 22:38:31,922 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 22:38:33,766 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():990] starting run threads in backend
+2025-03-09 22:38:34,037 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-09 22:38:34,037 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-09 22:38:34,037 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-09 22:38:34,038 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-09 22:38:34,039 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-09 22:38:34,048 INFO    Thread-16 (_run_job):10288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223834-8ea93ktp\logs\debug.log
+2025-03-09 22:38:34,048 INFO    Thread-16 (_run_job):10288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223834-8ea93ktp\logs\debug-internal.log
+2025-03-09 22:38:34,048 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:38:34,048 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'relu', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 20, 'num_hiddenLayers': 5, 'optimizer': 'adam', 'weightDecay': 0, 'weightInit': 'random'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 22:38:34,048 INFO    Thread-16 (_run_job):10288 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 22:38:34,294 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/8ea93ktp
+2025-03-09 22:38:34,295 ERROR   Thread-16 (_run_job):10288 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 22:38:34,295 INFO    Thread-16 (_run_job):10288 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 22:38:34,295 INFO    Thread-16 (_run_job):10288 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 22:38:34,295 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 22:38:34,295 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_restore():2322] restore
+2025-03-09 22:38:34,295 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_restore():2328] restore done
+2025-03-09 22:38:36,120 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 22:38:36,120 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 22:38:36,120 INFO    Thread-16 (_run_job):10288 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 22:38:36,126 ERROR   MainThread:10288 [pyagent.py:_run_jobs_from_queue():234] Run 8ea93ktp errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\1058529509.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, x_val, y_val, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\70919448.py", line 61, in train
+    self.backpropagation(x_batch, y_batch, learning_rate, optimizer)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\70919448.py", line 139, in backpropagation
+    dw = deltas[i].T.dot(self.layers[i]) / m
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shapes (164,64) and (784,164) not aligned: 64 (dim 1) != 784 (dim 0)
+
+2025-03-09 22:38:46,165 INFO    MsgRouterThr:10288 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_setup.py:_flush():67] Configure stats pid to 10288
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_setup.py:_flush():67] Loading settings from c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223847-a0lxh068\logs\debug.log
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223847-a0lxh068\logs\debug-internal.log
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001613B8CA450>
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'tanh', 'batchSize': 116, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 5, 'num_hiddenLayers': 4, 'optimizer': 'nadam', 'weightDecay': 0, 'weightInit': 'xavier'}
+config: {'_wandb': {}}
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():784] starting backend
+2025-03-09 22:38:47,040 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():788] sending inform_init request
+2025-03-09 22:38:47,046 INFO    Thread-21 (_run_job):10288 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-09 22:38:47,047 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():798] backend started and connected
+2025-03-09 22:38:47,049 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunc': 'tanh', 'batchSize': 116, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 5, 'num_hiddenLayers': 4, 'optimizer': 'nadam', 'weightDecay': 0, 'weightInit': 'xavier'}
+2025-03-09 22:38:47,051 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-09 22:38:47,071 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():891] updated telemetry
+2025-03-09 22:38:47,136 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 22:38:48,826 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():990] starting run threads in backend
+2025-03-09 22:38:49,087 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-09 22:38:49,088 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-09 22:38:49,088 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-09 22:38:49,089 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-09 22:38:49,090 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-09 22:38:49,090 INFO    Thread-21 (_run_job):10288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223849-a0lxh068\logs\debug.log
+2025-03-09 22:38:49,090 INFO    Thread-21 (_run_job):10288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_223849-a0lxh068\logs\debug-internal.log
+2025-03-09 22:38:49,090 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:38:49,090 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'tanh', 'batchSize': 116, 'hiddenLayer_Size': 64, 'learningRate': 0.0001, 'num_epochs': 5, 'num_hiddenLayers': 4, 'optimizer': 'nadam', 'weightDecay': 0, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 22:38:49,090 INFO    Thread-21 (_run_job):10288 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 22:38:49,338 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/a0lxh068
+2025-03-09 22:38:49,342 ERROR   Thread-21 (_run_job):10288 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 22:38:49,342 INFO    Thread-21 (_run_job):10288 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 22:38:49,342 INFO    Thread-21 (_run_job):10288 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 22:38:49,342 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 22:38:49,342 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_restore():2322] restore
+2025-03-09 22:38:49,342 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_restore():2328] restore done
+2025-03-09 22:38:51,245 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 22:38:51,247 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 22:38:51,248 INFO    Thread-21 (_run_job):10288 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 22:38:51,262 ERROR   MainThread:10288 [pyagent.py:_run_jobs_from_queue():234] Run a0lxh068 errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\1058529509.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, x_val, y_val, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\70919448.py", line 61, in train
+    self.backpropagation(x_batch, y_batch, learning_rate, optimizer)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_10288\70919448.py", line 139, in backpropagation
+    dw = deltas[i].T.dot(self.layers[i]) / m
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shapes (116,64) and (784,116) not aligned: 64 (dim 1) != 784 (dim 0)
+
+2025-03-09 22:38:51,267 ERROR   MainThread:10288 [pyagent.py:_run_jobs_from_queue():245] Detected 3 failed runs in the first 60 seconds, killing sweep.

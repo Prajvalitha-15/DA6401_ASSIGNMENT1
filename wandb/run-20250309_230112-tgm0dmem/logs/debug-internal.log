@@ -1,0 +1,16 @@
+{"time":"2025-03-09T23:01:12.1708619+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250309_230112-tgm0dmem\\logs\\debug-core.log"}
+{"time":"2025-03-09T23:01:13.4229523+05:30","level":"INFO","msg":"created new stream","id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:13.4229523+05:30","level":"INFO","msg":"stream: started","id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:13.4229523+05:30","level":"INFO","msg":"handler: started","stream_id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:13.4229523+05:30","level":"INFO","msg":"sender: started","stream_id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:13.4229523+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:13.9464176+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T23:01:48.0181102+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T23:01:48.0187234+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T23:01:49.0389197+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.1845291,"progress":"2.3KB/2.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.1845291,"progress":"229B/229B"}],"total_operations":2}}
+{"time":"2025-03-09T23:01:49.6339224+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T23:01:50.0067849+05:30","level":"INFO","msg":"stream: closing","id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:50.0073059+05:30","level":"INFO","msg":"handler: closed","stream_id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:50.0073701+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:50.0073701+05:30","level":"INFO","msg":"sender: closed","stream_id":"tgm0dmem"}
+{"time":"2025-03-09T23:01:50.0078815+05:30","level":"INFO","msg":"stream: closed","id":"tgm0dmem"}

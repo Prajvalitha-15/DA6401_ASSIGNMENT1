@@ -1,0 +1,30 @@
+2025-03-09 22:17:39,443 INFO    Thread-38 (_run_job):1332 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_221739-9dvj5ygb\logs\debug.log
+2025-03-09 22:17:39,443 INFO    Thread-38 (_run_job):1332 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250309_221739-9dvj5ygb\logs\debug-internal.log
+2025-03-09 22:17:39,443 INFO    Thread-38 (_run_job):1332 [wandb_init.py:init():761] calling init triggers
+2025-03-09 22:17:39,443 INFO    Thread-38 (_run_job):1332 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunc': 'relu', 'batchSize': 164, 'hiddenLayer_Size': 64, 'learningRate': 0.001, 'num_epochs': 20, 'num_hiddenLayers': 3, 'optimizer': 'momentum', 'weightDecay': 0.0005, 'weightInit': 'xavier'}
+config: {'num_epochs': 10, 'num_hiddenLayers': 3, 'hiddenLayer_Size': 40, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'Nesterov_Accelerated_GD', 'batchSize': 32, 'weightInit': 'xavier', 'activationFunc': 'sigmoid', '_wandb': {}}
+2025-03-09 22:17:39,443 INFO    Thread-38 (_run_job):1332 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-09 22:17:39,577 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/9dvj5ygb
+2025-03-09 22:17:39,579 ERROR   Thread-38 (_run_job):1332 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-09 22:17:39,579 INFO    Thread-38 (_run_job):1332 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-09 22:17:39,579 INFO    Thread-38 (_run_job):1332 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-09 22:17:39,580 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-09 22:17:39,580 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_restore():2322] restore
+2025-03-09 22:17:39,581 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_restore():2328] restore done
+2025-03-09 22:17:41,522 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-09 22:17:41,522 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-09 22:17:41,522 INFO    Thread-38 (_run_job):1332 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-09 22:17:41,527 ERROR   MainThread:1332 [pyagent.py:_run_jobs_from_queue():234] Run 9dvj5ygb errored:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_1332\1058529509.py", line 36, in sweep_hyperParameters
+    model.train(x_train, y_train, x_val, y_val, num_epochs, learningRate, optimizer, batchSize)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_1332\2379888119.py", line 61, in train
+    self.backpropagation(x_batch, y_batch, learning_rate, optimizer)
+  File "C:\Users\prajv\AppData\Local\Temp\ipykernel_1332\2379888119.py", line 133, in backpropagation
+    deltas.append(deltas[-1].dot(self.weights[i].T).T * self.sigmoid_derivative(self.layers[i]))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shapes (64,164) and (64,64) not aligned: 164 (dim 1) != 64 (dim 0)
+
+2025-03-09 22:17:41,527 ERROR   MainThread:1332 [pyagent.py:_run_jobs_from_queue():245] Detected 3 failed runs in the first 60 seconds, killing sweep.

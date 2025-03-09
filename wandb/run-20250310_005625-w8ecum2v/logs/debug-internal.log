@@ -1,0 +1,16 @@
+{"time":"2025-03-10T00:56:25.7171193+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250310_005625-w8ecum2v\\logs\\debug-core.log"}
+{"time":"2025-03-10T00:56:26.6354423+05:30","level":"INFO","msg":"created new stream","id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:26.6360989+05:30","level":"INFO","msg":"stream: started","id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:26.6360989+05:30","level":"INFO","msg":"handler: started","stream_id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:26.6360989+05:30","level":"INFO","msg":"sender: started","stream_id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:26.6360989+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:27.0001826+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T00:56:40.2534394+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T00:56:40.2550889+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T00:56:41.2140584+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T00:56:41.3490794+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-5, summary, console lines 0-10","runtime_seconds":0.135021}],"total_operations":1}}
+{"time":"2025-03-10T00:56:41.5575505+05:30","level":"INFO","msg":"stream: closing","id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:41.5575505+05:30","level":"INFO","msg":"handler: closed","stream_id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:41.5575505+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:41.5575505+05:30","level":"INFO","msg":"sender: closed","stream_id":"w8ecum2v"}
+{"time":"2025-03-10T00:56:41.5580615+05:30","level":"INFO","msg":"stream: closed","id":"w8ecum2v"}

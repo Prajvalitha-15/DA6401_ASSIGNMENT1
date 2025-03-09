@@ -1,0 +1,16 @@
+{"time":"2025-03-10T00:33:49.3478145+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250310_003349-tnnly4ki\\logs\\debug-core.log"}
+{"time":"2025-03-10T00:33:50.6739788+05:30","level":"INFO","msg":"created new stream","id":"tnnly4ki"}
+{"time":"2025-03-10T00:33:50.6739788+05:30","level":"INFO","msg":"stream: started","id":"tnnly4ki"}
+{"time":"2025-03-10T00:33:50.674485+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"tnnly4ki"}
+{"time":"2025-03-10T00:33:50.674485+05:30","level":"INFO","msg":"sender: started","stream_id":"tnnly4ki"}
+{"time":"2025-03-10T00:33:50.6739788+05:30","level":"INFO","msg":"handler: started","stream_id":"tnnly4ki"}
+{"time":"2025-03-10T00:33:51.3316191+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T00:34:53.7076834+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T00:34:53.7086386+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T00:34:54.7145497+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4063575,"progress":"1.2KB/1.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.0951726,"progress":"1009B/1009B"}],"total_operations":2}}
+{"time":"2025-03-10T00:34:55.5937922+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T00:34:55.9205519+05:30","level":"INFO","msg":"stream: closing","id":"tnnly4ki"}
+{"time":"2025-03-10T00:34:55.9205519+05:30","level":"INFO","msg":"handler: closed","stream_id":"tnnly4ki"}
+{"time":"2025-03-10T00:34:55.9205519+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"tnnly4ki"}
+{"time":"2025-03-10T00:34:55.9205519+05:30","level":"INFO","msg":"sender: closed","stream_id":"tnnly4ki"}
+{"time":"2025-03-10T00:34:55.9205519+05:30","level":"INFO","msg":"stream: closed","id":"tnnly4ki"}

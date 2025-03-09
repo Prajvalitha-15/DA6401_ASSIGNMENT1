@@ -1,0 +1,3 @@
+Sweep Name:  LR: 0.0001, AC: tanh, BS: 132, Optim: momentum, WI: xavier, WD: 0, No_HL: 5, HS: 64
+(784, 132) (784, 64) (1, 64)
+(132, 64) (64, 64) (1, 64)

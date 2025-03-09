@@ -1,0 +1,20 @@
+wandb_version: 1
+
+activationFunc:
+  value: tanh
+batchSize:
+  value: 116
+hiddenLayer_Size:
+  value: 32
+learningRate:
+  value: 0.001
+num_epochs:
+  value: 5
+num_hiddenLayers:
+  value: 3
+optimizer:
+  value: momentum
+weightDecay:
+  value: 0.5
+weightInit:
+  value: random

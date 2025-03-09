@@ -1,0 +1,2 @@
+Sweep Name:  LR: 0.0001, AC: tanh, BS: 164, Optim: adam, WI: xavier, WD: 0.5, No_HL: 5, HS: 64
+(784, 164) (784, 64) (1, 64)

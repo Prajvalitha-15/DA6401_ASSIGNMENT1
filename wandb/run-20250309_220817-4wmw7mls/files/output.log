@@ -1,0 +1,1 @@
+Sweep Name:  LR: 0.001, AC: tanh, BS: 132, Optim: adam, WI: xavier, WD: 0.0005, No_HL: 4, HS: 32

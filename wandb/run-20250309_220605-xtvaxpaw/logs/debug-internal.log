@@ -1,0 +1,16 @@
+{"time":"2025-03-09T22:06:05.89922+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250309_220605-xtvaxpaw\\logs\\debug-core.log"}
+{"time":"2025-03-09T22:06:07.3242428+05:30","level":"INFO","msg":"created new stream","id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:07.3244635+05:30","level":"INFO","msg":"stream: started","id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:07.3244635+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:07.3247111+05:30","level":"INFO","msg":"handler: started","stream_id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:07.3244635+05:30","level":"INFO","msg":"sender: started","stream_id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:07.7965677+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T22:06:08.1874479+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T22:06:08.4564372+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T22:06:09.2030343+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.1809452,"progress":"99B/99B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.1809452,"progress":"24B/24B"}],"total_operations":2}}
+{"time":"2025-03-09T22:06:09.7546356+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T22:06:10.1036831+05:30","level":"INFO","msg":"stream: closing","id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:10.1036831+05:30","level":"INFO","msg":"handler: closed","stream_id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:10.1036831+05:30","level":"INFO","msg":"sender: closed","stream_id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:10.1036831+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"xtvaxpaw"}
+{"time":"2025-03-09T22:06:10.1036831+05:30","level":"INFO","msg":"stream: closed","id":"xtvaxpaw"}

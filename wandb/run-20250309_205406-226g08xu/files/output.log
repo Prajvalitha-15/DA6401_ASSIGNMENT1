@@ -1,0 +1,1 @@
+Sweep Name:  LR: 0.0001, AC: sigmoid, BS: 16, Optim: adam, WI: xavier, WD: 0.5, No_HL: 5, HS: 32

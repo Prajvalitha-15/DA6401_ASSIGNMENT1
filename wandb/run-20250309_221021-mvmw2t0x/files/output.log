@@ -1,0 +1,1 @@
+Sweep Name:  LR: 0.001, AC: relu, BS: 132, Optim: rmsprop, WI: xavier, WD: 0, No_HL: 5, HS: 128

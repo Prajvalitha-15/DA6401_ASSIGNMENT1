@@ -1,0 +1,2 @@
+Sweep Name:  LR: 0.0001, AC: sigmoid, BS: 132, Optim: momentum, WI: random, WD: 0, No_HL: 4, HS: 64
+(784, 132) (784, 64) (1, 64)
