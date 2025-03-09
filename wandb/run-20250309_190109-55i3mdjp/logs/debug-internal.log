@@ -1,1 +1,24 @@
 {"time":"2025-03-09T19:01:09.5874407+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250309_190109-55i3mdjp\\logs\\debug-core.log"}
+{"time":"2025-03-09T19:01:11.8339909+05:30","level":"INFO","msg":"created new stream","id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:11.8339909+05:30","level":"INFO","msg":"handler: started","stream_id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:11.8339909+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:11.8344969+05:30","level":"INFO","msg":"stream: started","id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:11.8344969+05:30","level":"INFO","msg":"sender: started","stream_id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:12.3101768+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T19:01:12.7968984+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T19:01:12.8113018+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T19:01:12.816799+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T19:01:12.8293013+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T19:01:13.5000026+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T19:01:13.5269043+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T19:01:13.5322126+05:30","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-09T19:01:13.5450286+05:30","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-09T19:01:16.0906101+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T19:01:16.0945864+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T19:01:17.1261935+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.3311112,"progress":"737B/737B"}],"total_operations":1}}
+{"time":"2025-03-09T19:01:17.2012273+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T19:01:17.6277428+05:30","level":"INFO","msg":"stream: closing","id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:17.6277428+05:30","level":"INFO","msg":"handler: closed","stream_id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:17.6277428+05:30","level":"INFO","msg":"sender: closed","stream_id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:17.6277428+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"55i3mdjp"}
+{"time":"2025-03-09T19:01:17.6282643+05:30","level":"INFO","msg":"stream: closed","id":"55i3mdjp"}
