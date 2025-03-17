@@ -114,21 +114,34 @@ api = wandb.Api()
 runs = api.runs("da6401-assignments/assignment1")
 best_run = min(runs, key=lambda run: run.summary.get("val_loss", float("inf")))
 
-print(f"Best run name: {best_run.name}. \nValidation Loss: {best_run.summary.get('val_loss')}")
-
 bestrunname = best_run.name 
 
-config_keys = ["epochs", "hiddenLayers", "hiddenLayerSize", "weightDecay",    "learningRate", "optimizer", "batchSize", "weightInitialisation", "activationFunction"]
+values = bestrunname.split("#")
 
-config_values = bestrunname.split("#")
+epochs = int(values[0])
+hiddenLayers = int(values[1])
+hiddenLayerSize = int(values[2])
+weightDecay = float(values[3])
+learningRate = float(values[4])
+optimizer = values[5]
+batchSize = int(values[6])
+weightInitialisation = values[7]
+activationFunction = values[8]
 
-best_config = dict(zip(config_keys, config_values))
+print("Best Configuration:\n")
+print(f"Epochs: {epochs}")
+print(f"Hidden Layers: {hiddenLayers}")
+print(f"Hidden Layer Size: {hiddenLayerSize}")
+print(f"Weight Decay: {weightDecay}")
+print(f"Learning Rate: {learningRate}")
+print(f"Optimizer: {optimizer}")
+print(f"Batch Size: {batchSize}")
+print(f"Weight Initialization: {weightInitialisation}")
+print(f"Activation Function: {activationFunction}")
 
-best_config["epochs"] = int(best_config["epochs"])
-best_config["hiddenLayers"] = int(best_config["hiddenLayers"])
-best_config["hiddenLayerSize"] = int(best_config["hiddenLayerSize"])
-best_config["weightDecay"] = float(best_config["weightDecay"])
-best_config["learningRate"] = float(best_config["learningRate"])
-best_config["batchSize"] = int(best_config["batchSize"])
+bestmodel = NeuralNetwork(x_train.shape[0], [hiddenLayerSize] * hiddenLayers, y_train.shape[0])
 
-print(best_config)
+bestmodel.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+
+
+
