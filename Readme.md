@@ -5,3 +5,6 @@
 - **`4567.py`**: Covers Questions 4, 5, 6, and 7. It performs hyperparameter tuning using the `sweep` function, logs validation accuracy, and generates a validation accuracy vs. sweep plot. The best model is selected based on validation accuracy, and the confusion matrix for the test set is logged to Weights & Biases (WandB).  
 
 **Repository Link:** [https://github.com/Prajvalitha-15/DA6401_ASSIGNMENT1]
+
+**WandB Report Link:**
+[https://wandb.ai/da6401-assignments/assignment1/reports/-Assignment-1--VmlldzoxMTcxNDM1OQ]
