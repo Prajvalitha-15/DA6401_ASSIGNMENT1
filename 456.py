@@ -145,7 +145,7 @@ bestmodel = NeuralNetwork(x_train.shape[0], [hiddenLayerSize] * hiddenLayers, y_
 
 bestmodel.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
 
-test_probs = bestmodel.forward(x_test, activation function)
+test_probs = bestmodel.forward(x_test, activationFunction)
 test_preds = np.argmax(test_probs, axis = 0)
 test_trues = np.argmax(y_test, axis = 0)
 
