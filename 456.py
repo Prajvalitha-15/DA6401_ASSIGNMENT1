@@ -2,6 +2,8 @@ from keras.datasets import fashion_mnist
 from tensorflow.keras.utils import to_categorical
 from nn import NeuralNetwork
 import wandb 
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
 
 # Loading the data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
@@ -143,5 +145,26 @@ bestmodel = NeuralNetwork(x_train.shape[0], [hiddenLayerSize] * hiddenLayers, y_
 
 bestmodel.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
 
+test_probs = bestmodel.forward(x_test, activation function)
+test_preds = np.argmax(test_probs, axis = 0)
+test_trues = np.argmax(y_test, axis = 0)
 
+cm = confusion_matrix(test_trues, test_preds)
 
+def plot_confusion_matrix(cm, class_names):
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_names, yticklabels=class_names)
+    plt.xlabel("Predicted")
+    plt.ylabel("True")
+    plt.title("Confusion Matrix")
+    return plt
+
+class_names = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"]
+
+conf_matrix_plot = plot_confusion_matrix(cm, class_names)
+
+wandb.init(project= "assignment1", entity= "da6401-assignments")
+
+wandb.log({"confusion_matrix": wandb.Image(conf_matrix_plot)})
+
+wandb.finish()
