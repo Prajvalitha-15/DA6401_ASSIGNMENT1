@@ -1,0 +1,10 @@
+{"time":"2025-03-17T15:32:05.2926287+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\prajv\\Downloads\\ass1\\DA6401_ASSIGNMENT1\\wandb\\run-20250317_153205-zuks28n4\\logs\\debug-core.log"}
+{"time":"2025-03-17T15:32:06.6187742+05:30","level":"INFO","msg":"created new stream","id":"zuks28n4"}
+{"time":"2025-03-17T15:32:06.6189945+05:30","level":"INFO","msg":"stream: started","id":"zuks28n4"}
+{"time":"2025-03-17T15:32:06.6191256+05:30","level":"INFO","msg":"handler: started","stream_id":"zuks28n4"}
+{"time":"2025-03-17T15:32:06.6191256+05:30","level":"INFO","msg":"sender: started","stream_id":"zuks28n4"}
+{"time":"2025-03-17T15:32:06.6191256+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"zuks28n4"}
+{"time":"2025-03-17T15:32:07.2846584+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T15:32:13.5619061+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T15:32:13.5629346+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T15:32:14.5841509+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.1554959,"progress":"963B/963B"}],"total_operations":1}}

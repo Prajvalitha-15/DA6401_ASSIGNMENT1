@@ -1,0 +1,10 @@
+2025-03-17 15:32:07,520 INFO    Thread-16 (_run_job):21740 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_153207-zuks28n4\logs\debug.log
+2025-03-17 15:32:07,520 INFO    Thread-16 (_run_job):21740 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_153207-zuks28n4\logs\debug-internal.log
+2025-03-17 15:32:07,524 INFO    Thread-16 (_run_job):21740 [wandb_init.py:init():761] calling init triggers
+2025-03-17 15:32:07,524 INFO    Thread-16 (_run_job):21740 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 3, 'learningRate': 0.0001, 'optimizer': 'rmsprop', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 15:32:07,524 INFO    Thread-16 (_run_job):21740 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 15:32:13,545 INFO    Thread-16 (_run_job):21740 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/zuks28n4
+2025-03-17 15:32:13,560 INFO    Thread-16 (_run_job):21740 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 15:32:13,560 INFO    Thread-16 (_run_job):21740 [wandb_run.py:_restore():2322] restore
+2025-03-17 15:32:13,560 INFO    Thread-16 (_run_job):21740 [wandb_run.py:_restore():2328] restore done

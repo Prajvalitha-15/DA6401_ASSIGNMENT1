@@ -1,0 +1,77 @@
+2025-03-17 14:58:44,589 INFO    Thread-9 (_run_job):1052 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145844-khhwix6q\logs\debug.log
+2025-03-17 14:58:44,589 INFO    Thread-9 (_run_job):1052 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145844-khhwix6q\logs\debug-internal.log
+2025-03-17 14:58:44,589 INFO    Thread-9 (_run_job):1052 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:58:44,589 INFO    Thread-9 (_run_job):1052 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 64, 'epochs': 5, 'hiddenLayerSize': 32, 'hiddenLayers': 3, 'learningRate': 0.001, 'optimizer': 'nesterov', 'weightDecay': 0, 'weightInitialisation': 'xavier'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:58:44,589 INFO    Thread-9 (_run_job):1052 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:58:44,811 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/khhwix6q
+2025-03-17 14:58:44,811 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:58:44,823 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:58:44,824 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:58:47,731 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:58:47,732 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:58:47,732 INFO    Thread-9 (_run_job):1052 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 14:58:47,734 ERROR   MainThread:1052 [pyagent.py:_run_jobs_from_queue():234] Run khhwix6q errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 40, in train
+    self.backprop(x_batch, y_batch, learning_rate, optimizer, activation_funtion)
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 79, in backprop
+    deltas.append(self.weights[i].T.dot(deltas[i])) * f_derivative(self.layers[i])
+                                        ~~~~~~^^^
+IndexError: list index out of range
+
+2025-03-17 14:58:51,751 INFO    MsgRouterThr:1052 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_setup.py:_flush():67] Configure stats pid to 1052
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145853-a8fkdi89\logs\debug.log
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145853-a8fkdi89\logs\debug-internal.log
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'tanh', 'batchSize': 64, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'nesterov', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+config: {'_wandb': {}}
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():784] starting backend
+2025-03-17 14:58:53,251 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 14:58:53,268 INFO    Thread-14 (_run_job):1052 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 14:58:53,268 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():798] backend started and connected
+2025-03-17 14:58:53,270 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunction': 'tanh', 'batchSize': 64, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'nesterov', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+2025-03-17 14:58:53,271 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():891] updated telemetry
+2025-03-17 14:58:53,336 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 14:58:55,235 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 14:58:55,490 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 14:58:55,490 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 14:58:55,490 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 14:58:55,490 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 14:58:55,492 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 14:58:55,496 INFO    Thread-14 (_run_job):1052 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145855-a8fkdi89\logs\debug.log
+2025-03-17 14:58:55,496 INFO    Thread-14 (_run_job):1052 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145855-a8fkdi89\logs\debug-internal.log
+2025-03-17 14:58:55,496 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:58:55,496 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'tanh', 'batchSize': 64, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'nesterov', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:58:55,496 INFO    Thread-14 (_run_job):1052 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:58:55,617 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/a8fkdi89
+2025-03-17 14:58:55,617 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:58:55,618 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:58:55,618 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:58:59,409 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:58:59,409 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:58:59,409 INFO    Thread-14 (_run_job):1052 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 14:58:59,413 ERROR   MainThread:1052 [pyagent.py:_run_jobs_from_queue():234] Run a8fkdi89 errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 40, in train
+    self.backprop(x_batch, y_batch, learning_rate, optimizer, activation_funtion)
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 79, in backprop
+    deltas.append(self.weights[i].T.dot(deltas[i])) * f_derivative(self.layers[i])
+                                        ~~~~~~^^^
+IndexError: list index out of range
+
+2025-03-17 14:59:02,430 INFO    MsgRouterThr:1052 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.

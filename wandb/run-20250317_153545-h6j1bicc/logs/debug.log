@@ -1,0 +1,109 @@
+2025-03-17 15:35:45,850 INFO    Thread-14 (_run_job):18360 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 15:35:45,850 INFO    Thread-14 (_run_job):18360 [wandb_setup.py:_flush():67] Configure stats pid to 18360
+2025-03-17 15:35:45,850 INFO    Thread-14 (_run_job):18360 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-17 15:35:45,850 INFO    Thread-14 (_run_job):18360 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-17 15:35:45,850 INFO    Thread-14 (_run_job):18360 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 15:35:45,855 INFO    Thread-14 (_run_job):18360 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_153545-h6j1bicc\logs\debug.log
+2025-03-17 15:35:45,855 INFO    Thread-14 (_run_job):18360 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_153545-h6j1bicc\logs\debug-internal.log
+2025-03-17 15:35:45,855 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():761] calling init triggers
+2025-03-17 15:35:45,855 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'tanh', 'batchSize': 16, 'epochs': 5, 'hiddenLayerSize': 128, 'hiddenLayers': 4, 'learningRate': 0.001, 'optimizer': 'nadam', 'weightDecay': 0.0005, 'weightInitialisation': 'random'}
+config: {'_wandb': {}}
+2025-03-17 15:35:45,856 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():784] starting backend
+2025-03-17 15:35:45,856 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 15:35:45,859 INFO    Thread-14 (_run_job):18360 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 15:35:45,862 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():798] backend started and connected
+2025-03-17 15:35:45,863 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunction': 'tanh', 'batchSize': 16, 'epochs': 5, 'hiddenLayerSize': 128, 'hiddenLayers': 4, 'learningRate': 0.001, 'optimizer': 'nadam', 'weightDecay': 0.0005, 'weightInitialisation': 'random'}
+2025-03-17 15:35:45,874 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():891] updated telemetry
+2025-03-17 15:35:45,941 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 15:35:47,971 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 15:35:48,354 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 15:35:48,355 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 15:35:48,355 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 15:35:48,355 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 15:35:48,357 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 15:35:48,364 INFO    Thread-14 (_run_job):18360 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_153548-h6j1bicc\logs\debug.log
+2025-03-17 15:35:48,364 INFO    Thread-14 (_run_job):18360 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_153548-h6j1bicc\logs\debug-internal.log
+2025-03-17 15:35:48,364 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():761] calling init triggers
+2025-03-17 15:35:48,364 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'tanh', 'batchSize': 16, 'epochs': 5, 'hiddenLayerSize': 128, 'hiddenLayers': 4, 'learningRate': 0.001, 'optimizer': 'nadam', 'weightDecay': 0.0005, 'weightInitialisation': 'random'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 15:35:48,364 INFO    Thread-14 (_run_job):18360 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 18:00:38,060 INFO    Thread-8 (_heartbeat):18360 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Python312\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000220B74A9A90>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000220B74A9A90>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\sdk\lib\retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 398, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000220B74A9A90>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-03-17 18:01:10,502 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/h6j1bicc
+2025-03-17 18:01:10,502 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-17 18:01:10,503 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_restore():2322] restore
+2025-03-17 18:01:10,504 INFO    Thread-14 (_run_job):18360 [wandb_run.py:_restore():2328] restore done

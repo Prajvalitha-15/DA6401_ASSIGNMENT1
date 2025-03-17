@@ -1,0 +1,25 @@
+2025-03-17 15:02:06,734 INFO    Thread-14 (_run_job):15792 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_150206-k0nv325y\logs\debug.log
+2025-03-17 15:02:06,735 INFO    Thread-14 (_run_job):15792 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_150206-k0nv325y\logs\debug-internal.log
+2025-03-17 15:02:06,735 INFO    Thread-14 (_run_job):15792 [wandb_init.py:init():761] calling init triggers
+2025-03-17 15:02:06,736 INFO    Thread-14 (_run_job):15792 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'sigmoid', 'batchSize': 64, 'epochs': 5, 'hiddenLayerSize': 32, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'adam', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 15:02:06,736 INFO    Thread-14 (_run_job):15792 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 15:02:09,038 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/k0nv325y
+2025-03-17 15:02:09,038 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 15:02:09,041 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_restore():2322] restore
+2025-03-17 15:02:09,041 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_restore():2328] restore done
+2025-03-17 15:02:11,409 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 15:02:11,410 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 15:02:11,411 INFO    Thread-14 (_run_job):15792 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 15:02:11,415 ERROR   MainThread:15792 [pyagent.py:_run_jobs_from_queue():234] Run k0nv325y errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 42, in train
+    train_probs = self.forward(x_train)
+                  ^^^^^^^^^^^^^^^^^^^^^
+TypeError: NeuralNetwork.forward() missing 1 required positional argument: 'f_name'
+
+2025-03-17 15:02:13,414 INFO    MsgRouterThr:15792 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.

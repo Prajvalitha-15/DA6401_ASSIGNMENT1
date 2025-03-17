@@ -1,0 +1,27 @@
+2025-03-17 14:55:44,070 INFO    Thread-14 (_run_job):2536 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145544-oxd0wxwo\logs\debug.log
+2025-03-17 14:55:44,070 INFO    Thread-14 (_run_job):2536 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145544-oxd0wxwo\logs\debug-internal.log
+2025-03-17 14:55:44,070 INFO    Thread-14 (_run_job):2536 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:55:44,070 INFO    Thread-14 (_run_job):2536 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'sigmoid', 'batchSize': 16, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 3, 'learningRate': 0.0001, 'optimizer': 'nadam', 'weightDecay': 0, 'weightInitialisation': 'random'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:55:44,070 INFO    Thread-14 (_run_job):2536 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:55:44,195 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/oxd0wxwo
+2025-03-17 14:55:44,196 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:55:44,196 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:55:44,196 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:55:47,303 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:55:47,303 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:55:47,303 INFO    Thread-14 (_run_job):2536 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 14:55:47,307 ERROR   MainThread:2536 [pyagent.py:_run_jobs_from_queue():234] Run oxd0wxwo errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 40, in train
+    self.backprop(x_batch, y_batch, learning_rate, optimizer, activation_funtion)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 75, in backprop
+    deltas = [self.layers[-1] - y]
+              ~~~~~~~~~~~~~~~~^~~
+ValueError: operands could not be broadcast together with shapes (64,16) (10,16) 
+
+2025-03-17 14:55:51,322 INFO    MsgRouterThr:2536 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.

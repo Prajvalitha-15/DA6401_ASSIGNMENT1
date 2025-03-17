@@ -1,0 +1,136 @@
+2025-03-17 14:51:47,869 INFO    Thread-9 (_run_job):20972 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145147-b20hz0op\logs\debug.log
+2025-03-17 14:51:47,869 INFO    Thread-9 (_run_job):20972 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145147-b20hz0op\logs\debug-internal.log
+2025-03-17 14:51:47,869 INFO    Thread-9 (_run_job):20972 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:51:47,869 INFO    Thread-9 (_run_job):20972 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 64, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.0001, 'optimizer': 'rmsprop', 'weightDecay': 0.0005, 'weightInitialisation': 'random'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:51:47,869 INFO    Thread-9 (_run_job):20972 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:51:48,127 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/b20hz0op
+2025-03-17 14:51:48,128 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:51:48,128 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:51:48,128 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:51:51,242 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:51:51,242 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:51:51,243 INFO    Thread-9 (_run_job):20972 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 14:51:51,307 ERROR   MainThread:20972 [pyagent.py:_run_jobs_from_queue():234] Run b20hz0op errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 39, in train
+    self.forward(x_batch, activation_funtion)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 138, in forward
+    x = f(np.dot(w, x) + b)
+        ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 155, in relu
+    return max(x, 0)
+           ^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+2025-03-17 14:52:02,314 INFO    MsgRouterThr:20972 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_setup.py:_flush():67] Configure stats pid to 20972
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145203-eb47icrm\logs\debug.log
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145203-eb47icrm\logs\debug-internal.log
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 4, 'learningRate': 0.0001, 'optimizer': 'sgd', 'weightDecay': 0, 'weightInitialisation': 'xavier'}
+config: {'_wandb': {}}
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():784] starting backend
+2025-03-17 14:52:03,607 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 14:52:03,617 INFO    Thread-14 (_run_job):20972 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 14:52:03,619 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():798] backend started and connected
+2025-03-17 14:52:03,620 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 4, 'learningRate': 0.0001, 'optimizer': 'sgd', 'weightDecay': 0, 'weightInitialisation': 'xavier'}
+2025-03-17 14:52:03,623 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():891] updated telemetry
+2025-03-17 14:52:03,719 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 14:52:06,017 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 14:52:06,508 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 14:52:06,508 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 14:52:06,509 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 14:52:06,509 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 14:52:06,510 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 14:52:06,519 INFO    Thread-14 (_run_job):20972 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145206-eb47icrm\logs\debug.log
+2025-03-17 14:52:06,520 INFO    Thread-14 (_run_job):20972 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145206-eb47icrm\logs\debug-internal.log
+2025-03-17 14:52:06,520 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:52:06,520 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 10, 'hiddenLayerSize': 64, 'hiddenLayers': 4, 'learningRate': 0.0001, 'optimizer': 'sgd', 'weightDecay': 0, 'weightInitialisation': 'xavier'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:52:06,521 INFO    Thread-14 (_run_job):20972 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:52:06,709 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/eb47icrm
+2025-03-17 14:52:06,709 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:52:06,714 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:52:06,715 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:52:09,194 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:52:09,194 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:52:09,194 INFO    Thread-14 (_run_job):20972 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 14:52:09,198 ERROR   MainThread:20972 [pyagent.py:_run_jobs_from_queue():234] Run eb47icrm errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 39, in train
+    self.forward(x_batch, activation_funtion)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 138, in forward
+    x = f(np.dot(w, x) + b)
+        ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 155, in relu
+    return max(x, 0)
+           ^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+2025-03-17 14:52:14,225 INFO    MsgRouterThr:20972 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-17 14:52:15,649 INFO    Thread-19 (_run_job):20972 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 14:52:15,649 INFO    Thread-19 (_run_job):20972 [wandb_setup.py:_flush():67] Configure stats pid to 20972
+2025-03-17 14:52:15,649 INFO    Thread-19 (_run_job):20972 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-17 14:52:15,649 INFO    Thread-19 (_run_job):20972 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-17 14:52:15,650 INFO    Thread-19 (_run_job):20972 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 14:52:15,650 INFO    Thread-19 (_run_job):20972 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145215-8cxpg4wv\logs\debug.log
+2025-03-17 14:52:15,650 INFO    Thread-19 (_run_job):20972 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145215-8cxpg4wv\logs\debug-internal.log
+2025-03-17 14:52:15,650 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:52:15,650 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 5, 'hiddenLayerSize': 32, 'hiddenLayers': 4, 'learningRate': 0.001, 'optimizer': 'nadam', 'weightDecay': 0.5, 'weightInitialisation': 'random'}
+config: {'_wandb': {}}
+2025-03-17 14:52:15,650 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():784] starting backend
+2025-03-17 14:52:15,652 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 14:52:15,655 INFO    Thread-19 (_run_job):20972 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 14:52:15,655 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():798] backend started and connected
+2025-03-17 14:52:15,656 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 5, 'hiddenLayerSize': 32, 'hiddenLayers': 4, 'learningRate': 0.001, 'optimizer': 'nadam', 'weightDecay': 0.5, 'weightInitialisation': 'random'}
+2025-03-17 14:52:15,659 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():891] updated telemetry
+2025-03-17 14:52:15,728 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 14:52:17,897 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 14:52:18,153 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 14:52:18,154 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 14:52:18,154 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 14:52:18,154 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 14:52:18,155 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 14:52:18,157 INFO    Thread-19 (_run_job):20972 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145218-8cxpg4wv\logs\debug.log
+2025-03-17 14:52:18,157 INFO    Thread-19 (_run_job):20972 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145218-8cxpg4wv\logs\debug-internal.log
+2025-03-17 14:52:18,157 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:52:18,157 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'relu', 'batchSize': 16, 'epochs': 5, 'hiddenLayerSize': 32, 'hiddenLayers': 4, 'learningRate': 0.001, 'optimizer': 'nadam', 'weightDecay': 0.5, 'weightInitialisation': 'random'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:52:18,157 INFO    Thread-19 (_run_job):20972 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:52:18,282 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/8cxpg4wv
+2025-03-17 14:52:18,283 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:52:18,283 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:52:18,283 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:52:21,314 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:52:21,314 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:52:21,314 INFO    Thread-19 (_run_job):20972 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 14:52:21,317 ERROR   MainThread:20972 [pyagent.py:_run_jobs_from_queue():234] Run 8cxpg4wv errored:
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\456.py", line 103, in sweep_hyperparameters
+    model.train(x_train, y_train, x_val, y_val, epochs, weightDecay, learningRate, optimizer, batchSize, weightInitialisation, activationFunction)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 39, in train
+    self.forward(x_batch, activation_funtion)
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 138, in forward
+    x = f(np.dot(w, x) + b)
+        ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\nn.py", line 155, in relu
+    return max(x, 0)
+           ^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+2025-03-17 14:52:21,320 ERROR   MainThread:20972 [pyagent.py:_run_jobs_from_queue():245] Detected 3 failed runs in the first 60 seconds, killing sweep.

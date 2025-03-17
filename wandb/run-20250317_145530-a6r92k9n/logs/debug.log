@@ -1,0 +1,36 @@
+2025-03-17 14:55:30,924 INFO    Thread-9 (_run_job):2536 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 14:55:30,924 INFO    Thread-9 (_run_job):2536 [wandb_setup.py:_flush():67] Configure stats pid to 2536
+2025-03-17 14:55:30,924 INFO    Thread-9 (_run_job):2536 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\.config\wandb\settings
+2025-03-17 14:55:30,924 INFO    Thread-9 (_run_job):2536 [wandb_setup.py:_flush():67] Loading settings from C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\settings
+2025-03-17 14:55:30,924 INFO    Thread-9 (_run_job):2536 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 14:55:30,924 INFO    Thread-9 (_run_job):2536 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145530-a6r92k9n\logs\debug.log
+2025-03-17 14:55:30,926 INFO    Thread-9 (_run_job):2536 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145530-a6r92k9n\logs\debug-internal.log
+2025-03-17 14:55:30,926 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:55:30,926 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'tanh', 'batchSize': 32, 'epochs': 5, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'sgd', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+config: {'_wandb': {}}
+2025-03-17 14:55:30,926 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():784] starting backend
+2025-03-17 14:55:30,926 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 14:55:30,966 INFO    Thread-9 (_run_job):2536 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 14:55:30,968 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():798] backend started and connected
+2025-03-17 14:55:30,970 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_config_callback():1261] config_cb None None {'activationFunction': 'tanh', 'batchSize': 32, 'epochs': 5, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'sgd', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+2025-03-17 14:55:30,971 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():891] updated telemetry
+2025-03-17 14:55:31,035 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 14:55:33,068 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 14:55:33,319 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 14:55:33,319 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 14:55:33,319 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 14:55:33,320 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 14:55:33,323 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 14:55:33,323 INFO    Thread-9 (_run_job):2536 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145533-a6r92k9n\logs\debug.log
+2025-03-17 14:55:33,323 INFO    Thread-9 (_run_job):2536 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\prajv\Downloads\ass1\DA6401_ASSIGNMENT1\wandb\run-20250317_145533-a6r92k9n\logs\debug-internal.log
+2025-03-17 14:55:33,323 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():761] calling init triggers
+2025-03-17 14:55:33,323 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activationFunction': 'tanh', 'batchSize': 32, 'epochs': 5, 'hiddenLayerSize': 64, 'hiddenLayers': 5, 'learningRate': 0.001, 'optimizer': 'sgd', 'weightDecay': 0.0005, 'weightInitialisation': 'xavier'}
+config: {'epochs': 5, 'hiddenLayers': 3, 'hiddenLayerSize': 32, 'weightDecay': 0, 'learningRate': 0.001, 'optimizer': 'sgd', 'batchSize': 16, 'weightInitialisation': 'random', 'activationFunction': 'tanh', '_wandb': {}}
+2025-03-17 14:55:33,323 INFO    Thread-9 (_run_job):2536 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-17 14:55:33,449 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_finish():2112] finishing run da6401-assignments/assignment1/a6r92k9n
+2025-03-17 14:55:33,449 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 14:55:33,461 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_restore():2322] restore
+2025-03-17 14:55:33,461 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_restore():2328] restore done
+2025-03-17 14:55:36,246 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 14:55:36,246 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 14:55:36,246 INFO    Thread-9 (_run_job):2536 [wandb_run.py:_footer_sync_info():3917] logging synced files
