@@ -115,3 +115,20 @@ runs = api.runs("da6401-assignments/assignment1")
 best_run = min(runs, key=lambda run: run.summary.get("val_loss", float("inf")))
 
 print(f"Best run name: {best_run.name}. \nValidation Loss: {best_run.summary.get('val_loss')}")
+
+bestrunname = best_run.name 
+
+config_keys = ["epochs", "hiddenLayers", "hiddenLayerSize", "weightDecay",    "learningRate", "optimizer", "batchSize", "weightInitialisation", "activationFunction"]
+
+config_values = bestrunname.split("#")
+
+best_config = dict(zip(config_keys, config_values))
+
+best_config["epochs"] = int(best_config["epochs"])
+best_config["hiddenLayers"] = int(best_config["hiddenLayers"])
+best_config["hiddenLayerSize"] = int(best_config["hiddenLayerSize"])
+best_config["weightDecay"] = float(best_config["weightDecay"])
+best_config["learningRate"] = float(best_config["learningRate"])
+best_config["batchSize"] = int(best_config["batchSize"])
+
+print(best_config)
